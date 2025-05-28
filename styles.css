@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') 
+      no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 380px;
+  padding: 20px 25px 30px;
+  box-shadow: 0 0 15px #0009;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.menu, .game, .names-input {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+button {
+  background: #764ba2;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #667eea;
+}
+
+#board {
+  margin: 20px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  background: #5a3e8a;
+  border-radius: 12px;
+  font-size: 3rem;
+  line-height: 100px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.cell:hover {
+  background: #8c69d9;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: 600;
+  min-height: 24px;
+}
+
+.names-input input {
+  width: 80%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.names-input button {
+  margin-top: 10px;
+  width: auto;
+  padding: 10px 30px;
+}
